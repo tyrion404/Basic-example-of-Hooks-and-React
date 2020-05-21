@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import ResourceList from './ResourceList';
-import UseResources from './UseResources';
+import UserList from './UserList';
 
 const App = () => {
 
@@ -31,7 +31,7 @@ const App = () => {
             <ResourceList resource={resource} />
             <br />
             Users
-            <UseResources />
+            <UserList />
         </div >
     );
 }
