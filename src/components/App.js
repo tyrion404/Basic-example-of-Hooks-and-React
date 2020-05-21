@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import ResourceList from './ResourceList';
+import UseResources from './UseResources';
 
 const App = () => {
 
@@ -19,15 +20,18 @@ const App = () => {
                     onClick={() => setResource('posts')}
                 >
                     Posts
-                    </button>
+                </button>
                 <button
                     className="ui button secondary"
                     onClick={() => setResource('todos')}
                 >
                     Todos
-                    </button>
+                </button>
             </div>
             <ResourceList resource={resource} />
+            <br />
+            Users
+            <UseResources />
         </div >
     );
 }
